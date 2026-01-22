@@ -2,7 +2,7 @@
 
 An interactive Power BI dashboard built on an insurance dataset to track policy activity, premium & coverage performance, and claims behavior with slicers, KPIs, drill-through, and Power BI Service publishing.
 
-2. Short Description / Purpose
+2. Purpose
 
 The Insurance Policy & Claims Analytics Dashboard is a Power BI report created to analyze 10,000 insurance records stored in SQL Server. It helps users explore key metrics like premium amount, coverage amount, claim amount, claim status trends, customer segmentation, and active vs inactive policies, while allowing detailed drill-through analysis.
 
@@ -46,7 +46,7 @@ Extra fields created in Power Query:
 
  Active / Inactive (based on Policy End Date condition)
 
-5. Features / Highlights
+5. Features 
  Business Problem
 
 Insurance data usually contains multiple fields (premium, coverage, claim status, customer details), but without a dashboard it’s difficult to quickly answer questions like:
