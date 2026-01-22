@@ -1,5 +1,4 @@
-1. Project Title / Headline
- Insurance Policy & Claims Analytics Dashboard
+1. Insurance Policy & Claims Analytics Dashboard
 
 An interactive Power BI dashboard built on an insurance dataset to track policy activity, premium & coverage performance, and claims behavior with slicers, KPIs, drill-through, and Power BI Service publishing.
 
