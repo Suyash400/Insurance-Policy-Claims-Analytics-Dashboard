@@ -123,4 +123,7 @@ Users can right-click a policy type from the bar chart and drill through to a de
 ---
 
 ## 6. Screenshots / Demos  
-https://github.com/Suyash400/Insurance-Policy-Claims-Analytics-Dashboard/blob/main/InsuranceDashboardimage.png
+
+### Dashboard Preview
+![Insurance Dashboard](https://raw.githubusercontent.com/Suyash400/Insurance-Policy-Claims-Analytics-Dashboard/main/InsuranceDashboardimage.png)
+
