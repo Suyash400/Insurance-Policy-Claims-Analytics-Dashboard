@@ -1,5 +1,5 @@
 1. Project Title / Headline
-🛡️ Insurance Policy & Claims Analytics Dashboard
+ Insurance Policy & Claims Analytics Dashboard
 
 An interactive Power BI dashboard built on an insurance dataset to track policy activity, premium & coverage performance, and claims behavior with slicers, KPIs, drill-through, and Power BI Service publishing.
 
@@ -43,12 +43,12 @@ Claim Number, Claim Date, Claim Amount, Claim Status
 
 Extra fields created in Power Query:
 
-✅ Age Group (Young Adults / Adults / Senior)
+ Age Group (Young Adults / Adults / Senior)
 
-✅ Active / Inactive (based on Policy End Date condition)
+ Active / Inactive (based on Policy End Date condition)
 
 5. Features / Highlights
-✅ Business Problem
+ Business Problem
 
 Insurance data usually contains multiple fields (premium, coverage, claim status, customer details), but without a dashboard it’s difficult to quickly answer questions like:
 
@@ -62,7 +62,7 @@ Which age segment contributes higher claim amounts?
 
 How does coverage vary across different policy types and claim statuses?
 
-✅ Goal of the Dashboard
+ Goal of the Dashboard
 
 To create a single Power BI report that:
 
@@ -74,7 +74,7 @@ Provides drill-through access to full records for deeper analysis
 
 Can be published and shared through Power BI Service
 
-✅ Walkthrough of Key Visuals (Brief)
+ Walkthrough of Key Visuals (Brief)
 🔹 KPI Cards (Top Section)
 
 Premium Amount
@@ -149,7 +149,7 @@ Values → Coverage Amount
 A separate page contains a full table view of records.
 From the bar chart, users can right-click → drill through by Policy Type to see filtered row-level details.
 
-✅ Business Impact & Insights
+ Business Impact & Insights
 
 Fast reporting: Key KPIs are available in one view instead of manual Excel/SQL checks
 
