@@ -123,7 +123,4 @@ Users can right-click a policy type from the bar chart and drill through to a de
 ---
 
 ## 6. Screenshots / Demos  
-Add screenshots of:  
-- Main Dashboard Page (Page 1)  
-- Drill-through Table Page (Page 2)  
-- Published Report View in Power BI Service  
+https://github.com/Suyash400/Insurance-Policy-Claims-Analytics-Dashboard/blob/main/InsuranceDashboardimage.png
