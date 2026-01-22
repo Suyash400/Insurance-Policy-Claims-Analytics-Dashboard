@@ -1,37 +1,36 @@
-1. Project Title
-Insurance Policy & Claims Analytics Dashboard
 
-An interactive Power BI dashboard built on an insurance dataset to track policy activity, premium & coverage performance, and claims behavior with slicers, KPIs, drill-through, and Power BI Service publishing.
+1. Project Title / Headline
 
-2. Purpose
+🛡️ Insurance Policy & Claims Analytics Dashboard
+A clean, interactive Power BI dashboard built on an insurance dataset to analyze premium, coverage, claims, policy activity (active/inactive) and customer trends with slicers, KPIs, and drill-through insights.
 
-The Insurance Policy & Claims Analytics Dashboard is a Power BI report created to analyze 10,000 insurance records stored in SQL Server. It helps users explore key metrics like premium amount, coverage amount, claim amount, claim status trends, customer segmentation, and active vs inactive policies, while allowing detailed drill-through analysis.
+2. Short Description / Purpose
+
+The Insurance Policy & Claims Analytics Dashboard is an interactive Power BI report designed to analyze 10,000 insurance records stored in SQL Server. It helps users track key insurance performance metrics like premium collection, coverage distribution, claim amount trends, claim status outcomes, and active vs inactive policies for faster reporting and decision-making.
 
 3. Tech Stack
 
 The dashboard was built using the following tools and technologies:
 
-📊 Power BI Desktop – Building the report, visuals, slicers, KPIs, and interactions
+📊 Power BI Desktop – Main platform used for building the dashboard and visuals.
 
-🔄 Power Query Editor – Data profiling, transformations, and conditional column creation
+📂 Power Query Editor – Used for data profiling, cleaning, and creating derived columns.
 
-🧠 DAX / Built-in Aggregations – Used for totals, counts, filtering behavior, KPI summaries
+🧠 DAX / Aggregations – Used for KPIs, totals, counts, and dynamic filtering behavior.
 
-🗄️ Microsoft SQL Server (Developer Edition) – Data storage and main data source
+🗄️ Microsoft SQL Server (Developer Edition) – Used as the primary data source for the project.
 
-🧾 SSMS (SQL Server Management Studio) – Importing the CSV and validating data using SQL queries
+🧾 SSMS (SQL Server Management Studio) – Used for importing the dataset and validating data using SQL queries.
 
-☁️ Power BI Service – Publishing report, workspace creation, and report sharing
+☁️ Power BI Service – Used for publishing reports, workspace creation, and sharing.
 
-📁 File Format – .pbix for development
+📁 File Format – .pbix for development and .png for dashboard previews.
 
 4. Data Source
 
-Source: Insurance dataset imported into Microsoft SQL Server (flat file / CSV)
+Source: Insurance dataset imported into Microsoft SQL Server (flat file / CSV).
 
-Records: ~10,000 rows
-
-Key columns in the dataset:
+The dataset contains 10,000 records with policy, customer, and claim-level details such as:
 
 Policy Number, Customer ID, Gender, Age, Policy Type
 
@@ -41,84 +40,85 @@ Premium Amount, Coverage Amount
 
 Claim Number, Claim Date, Claim Amount, Claim Status
 
-Extra fields created in Power Query:
+Additional columns created in Power Query for analysis:
 
- Age Group (Young Adults / Adults / Senior)
+Age Group (Young Adults / Adults / Senior)
 
- Active / Inactive (based on Policy End Date condition)
+Active / Inactive (based on Policy End Date logic)
 
-5. Features 
- Business Problem
+5. Features / Highlights
+• Business Problem
 
-Insurance data usually contains multiple fields (premium, coverage, claim status, customer details), but without a dashboard it’s difficult to quickly answer questions like:
+Insurance datasets contain multiple attributes (policy type, premiums, coverage, claims, customer demographics), but without a dashboard it becomes time-consuming to answer important questions like:
 
-Which policy types generate the highest premiums?
+Which policy types generate the most premium?
 
-How many policies are currently active vs inactive?
+How many policies are active vs expired?
 
-What’s the claim outcome split (settled / rejected / pending)?
+What is the split of claims (settled / rejected / pending)?
 
-Which age segment contributes higher claim amounts?
+Which age segment has higher claim amounts?
 
-How does coverage vary across different policy types and claim statuses?
+How does coverage vary across policy types and claim outcomes?
 
- Goal of the Dashboard
+These insights are not easy to track quickly in raw tables.
 
-To create a single Power BI report that:
+• Goal of the Dashboard
 
-Gives a clear summary of premium, coverage, and claims
+To provide an interactive Power BI report that:
 
-Supports interactive filtering using slicers and visual selections
+Shows key insurance KPIs in one place
 
-Provides drill-through access to full records for deeper analysis
+Allows users to filter data by policy/customer/claim
 
-Can be published and shared through Power BI Service
+Highlights claim outcome trends and policy performance
 
- Walkthrough of Key Visuals (Brief)
-🔹 KPI Cards (Top Section)
+Enables drill-through to row-level records for validation and deeper analysis
 
-Premium Amount
+Can be published to Power BI Service for sharing with others
 
-Coverage Amount
+• Walkthrough of Key Visuals
 
-Claim Amount
-These cards update instantly based on slicers and selections.
+Key KPIs (Top Section)
 
-🔹 Slicers (Filters)
+Premium Amount (Total)
+
+Coverage Amount (Total)
+
+Claim Amount (Total)
+
+Filter Panel (Slicers)
 
 Policy Number
 
 Customer ID
 
 Claim Number
-Used to filter the full report page.
+(All visuals update based on slicer selections)
 
-🔹 Multi-Row Card (Gender Split)
+Gender Distribution (Multi-row Card)
 
-Shows count of:
+Male Customers Count
 
-Male customers
+Female Customers Count
+(Also works as a quick filter)
 
-Female customers
-Also works as a filter when clicked.
-
-🔹 Ribbon Chart (Claims by Status)
-
-Displays the number of claims by:
+Claims by Status (Ribbon Chart)
+Shows the number of claims by:
 
 Settled
 
-Rejected
-
 Pending
 
-🔹 Bar Chart (Premium Amount by Policy Type)
+Rejected
 
-Compares policy types (Auto, Health, Home, Life, Travel etc.) based on premium contribution.
+Premium Amount by Policy Type (Bar Chart)
+Compares total premium generated by different policy types like:
 
-🔹 Line Chart (Claim Amount by Age Group)
+Auto, Health, Home, Life, Travel
 
-Shows total claim amount for:
+Claim Amount by Age Group (Line Chart)
+Displays claim amount trends across:
 
 Young Adults
 
@@ -126,42 +126,45 @@ Adults
 
 Senior
 
-🔹 Donut Chart (Active vs Inactive Policies)
+Active vs Inactive Policies (Donut Chart)
+Shows how many policies are currently:
 
-Policy activity status distribution:
+Active
 
-Active policies
+Inactive
 
-Inactive policies
+Coverage Amount Breakdown (Matrix Visual)
+Matrix view showing coverage totals split by:
 
-🔹 Matrix Visual (Coverage Amount Breakdown)
+Policy Type (Rows)
 
-Coverage amount analyzed by:
+Claim Status (Columns)
 
-Rows → Policy Type
+Coverage Amount (Values)
 
-Columns → Claim Status
+Drill-through Details Page (Page 2)
+Users can right-click a policy type from the bar chart and drill through to a detailed table page that shows full row-level records filtered for that selected policy type.
 
-Values → Coverage Amount
+• Business Impact & Insights
 
-🔹 Drill Through Page (Detailed Records)
+Policy Performance Tracking: Quickly identify which policy types contribute the most premium.
 
-A separate page contains a full table view of records.
-From the bar chart, users can right-click → drill through by Policy Type to see filtered row-level details.
+Claims Monitoring: Understand whether claims are mostly settled, rejected, or pending.
 
- Business Impact & Insights
+Customer Segmentation: Compare behavior across gender and age groups.
 
-Fast reporting: Key KPIs are available in one view instead of manual Excel/SQL checks
+Portfolio Management: Track active vs inactive policies for operational visibility.
 
-Policy performance tracking: Premium by policy type shows which products generate value
+Detailed Analysis: Drill-through provides record-level clarity without manually filtering tables.
 
-Claims monitoring: Status breakdown helps track rejected vs settled patterns
-
-Customer segmentation: Gender and age group visuals help understand customer claim behavior
-
-Deep dive capability: Drill-through page provides record-level verification when needed
-
-Share-ready: Report can be published and shared through Power BI Service workspaces
+Share-Ready Reporting: Report can be published and shared via Power BI Service workspaces.
 
 6. Screenshots / Demos
-   https://github.com/Suyash400/Insurance-Policy-Claims-Analytics-Dashboard/blob/main/InsuranceDashboardimage.png
+
+✅ Add screenshots of:
+
+Main Dashboard Page (Page 1)
+
+Drill-through Table Page (Page 2)
+
+Published Report View in Power BI Service
