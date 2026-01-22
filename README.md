@@ -58,7 +58,7 @@ To provide an interactive Power BI report that:
 - Allows users to filter data by policy/customer/claim  
 - Highlights claim outcome trends and policy performance  
 - Enables drill-through to row-level records for validation and deeper analysis  
-- Can be published to Power BI Service for sharing with others  
+
 
 ---
 
