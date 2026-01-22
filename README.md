@@ -163,3 +163,4 @@ Deep dive capability: Drill-through page provides record-level verification when
 Share-ready: Report can be published and shared through Power BI Service workspaces
 
 6. Screenshots / Demos
+   https://github.com/Suyash400/Insurance-Policy-Claims-Analytics-Dashboard/blob/main/InsuranceDashboardimage.png
